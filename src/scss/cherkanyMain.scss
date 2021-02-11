@@ -1,0 +1,46 @@
+.mainblock {
+  &__content {
+    background: url(../photo/bg.jpg);
+    margin-top: 106px;
+    height: 830px;
+    width: 100%;
+    border-radius: $borrad;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 10px 100px 10px;
+    @media (max-width: $md3+px) {
+      background: url();
+      background-color: rgb(151, 151, 151);
+      max-height: max-content;
+      margin-top: 66px;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+    }
+  }
+
+  &__text {
+    max-width: 700px;
+    text-align: center;
+    font-size: 28px;
+    @media (max-width: $md3+px) {
+      margin-top: 80%;
+    }
+    @media (max-width: $md4+px) {
+      font-size: 16px;
+    }
+  }
+  
+  &__btn {
+    display: block;
+    margin-top: 100px;
+    padding: 15px 100px;
+    border-radius: $borrad;
+    font-size: 20px;
+    line-height: 20px;
+    background-color: #09265d;
+  }
+}
