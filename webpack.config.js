@@ -60,6 +60,14 @@ module.exports = {
           from: path.resolve(__dirname, "src/favicon.ico"),
           to: path.resolve(__dirname, "dist"),
         },
+        {
+          from: path.resolve(__dirname, "src/photo/LOGO.jpg"),
+          to: path.resolve(__dirname, "dist"),
+        },
+        {
+          from: path.resolve(__dirname, "src/photo/bg.jpg"),
+          to: path.resolve(__dirname, "dist"),
+        },
       ],
     }),
     new MiniCssExtractPlugin({
@@ -73,15 +81,26 @@ module.exports = {
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: "",
+            },
           },
           "css-loader",
-          "sass-loader",
+          "sass-loader?sourceMap",
         ],
       },
       {
         test: /\.m?js$/,
         exclude: /node_modules/,
         use: jsLoaders(),
+      },
+      {
+        test: /\.(png|jpe?g|gif)$/i,
+        use: [
+          {
+            loader: "file-loader",
+          },
+        ],
       },
     ],
   },
