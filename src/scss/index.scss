@@ -15,10 +15,14 @@ $fontFamily: "Montserrat";
 @import "null";
 @import "header";
 @import "cherkanyMain";
+@import "chooserCategory";
+
 
 .wrapper {
+  position: relative;
 }
 .container {
+  position: relative;
   max-width: $maxWidthContainer + px;
   margin: 0 auto;
   width: 100%;
@@ -36,8 +40,13 @@ $fontFamily: "Montserrat";
 
 body {
   background-color: #e8e9ed;
-  height: 2000px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  overflow: auto;
   font-family: $fontFamily;
   overflow-x: hidden;
+  position: relative;
 }
+
 

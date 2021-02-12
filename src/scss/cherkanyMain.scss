@@ -1,7 +1,7 @@
 .mainblock {
   &__content {
     background: url(../photo/bg.jpg);
-    margin-top: 106px;
+    margin-top: 30px;
     height: 830px;
     width: 100%;
     border-radius: $borrad;
@@ -10,11 +10,10 @@
     justify-content: center;
     align-items: center;
     padding: 0px 10px 100px 10px;
-    @media (max-width: $md3+px) {
-      background: url();
-      background-color: rgb(151, 151, 151);
-      max-height: max-content;
-      margin-top: 66px;
+    @media (max-width: $md3+px) and (max-height: 1024px) {
+      background-position: center;
+      margin-top: 15px;
+      height: 90vh;
     }
     a {
       text-decoration: none;
@@ -25,15 +24,15 @@
   &__text {
     max-width: 700px;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     @media (max-width: $md3+px) {
-      margin-top: 80%;
+      margin-top: 10%;
     }
     @media (max-width: $md4+px) {
       font-size: 16px;
     }
   }
-  
+
   &__btn {
     display: block;
     margin-top: 100px;
@@ -42,5 +41,43 @@
     font-size: 20px;
     line-height: 20px;
     background-color: #09265d;
+
+    span {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        width: 0;
+        height: 1px;
+        background-color:#fff;
+        transition: all 0.3s ease;
+        bottom: 0;
+      }
+      @media (max-width: $md3+px) {
+        &::after {
+          background-color: #fff;
+        }
+      }
+    }
+
+    &:hover {
+      color: rgba(255, 255, 255, 0.771);
+
+      span {
+        &::after {
+          left: 0;
+          width: 100%;
+        }
+      }
+    }
+
+    @media (max-width: $md3+px) {
+      margin-top: 50px;
+    }
+    @media (max-width: $md4+px) {
+      padding: 10px 50px;
+    }
   }
 }

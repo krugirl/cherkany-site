@@ -1,3 +1,7 @@
+.fakeheader{
+  height: 76px;
+}
+
 .header {
   position: fixed;
   top: 0;
@@ -7,7 +11,8 @@
   transition: background-color 0.7s ease;
   z-index: 50;
   @media (max-width: $md3+px) {height: 50px;}
-  
+
+ 
 
   &__menu {
     z-index: 50;
