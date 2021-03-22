@@ -3,20 +3,19 @@ $minWidth: 320;
 $maxWidth: 1920;
 $maxWidthContainer: 1280;
 $md1: $maxWidthContainer + 12;
-$md2: 991.98;
-$md3: 767.98;
-$md4: 479.98;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
 
 $borrad: 10px;
 
-$fontFamily: "Montserrat";
+$fontFamily: 'Montserrat';
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
-@import "fonts";
-@import "null";
-@import "header";
-@import "cherkanyMain";
-@import "chooserCategory";
-
+@import 'fonts';
+@import 'null';
+@import 'header';
+@import 'cherkanyMain';
+@import 'chooserCategory';
 
 .wrapper {
   position: relative;
@@ -48,5 +47,3 @@ body {
   overflow-x: hidden;
   position: relative;
 }
-
-

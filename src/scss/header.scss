@@ -123,6 +123,7 @@
       position: fixed;
       width: 100%;
       height: auto;
+      display: block;
       z-index: 2;
       top: 50px;
       left: -110%;
@@ -149,7 +150,6 @@
       padding: 15px;
       cursor: pointer;
       display: block;
-      margin-right: 85px;
       font-size: 18px;
       line-height: 140%;
       font-weight: 500;
@@ -163,7 +163,6 @@
       }
 
       @media (max-width: $md2+px) {
-        margin-right: 50px;
         &:last-child {
           margin-right: 0;
         }
