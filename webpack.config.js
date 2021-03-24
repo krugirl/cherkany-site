@@ -32,7 +32,8 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './js/index.js',
-    cafe: './js/cafe.js'
+    cafe: './js/cafe.js',
+    search: './js/search.js'
 },
   output: {
     filename: '[name].bundle.js',
@@ -65,6 +66,11 @@ module.exports = {
       filename: 'cafe.html',
       template: 'cafe.html',
       chunks: ['cafe']
+    }),
+    new HTMLWebpackPlugin({
+      filename: 'search.html',
+      template: 'search.html',
+      chunks: ['search']
     }),
     new CopyPlugin({
       patterns: [

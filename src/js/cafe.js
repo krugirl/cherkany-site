@@ -18,11 +18,14 @@ document.addEventListener('scroll', () => {
     once = false;
     second = true;
     header.style.backgroundColor = 'white';
+    header.classList.add('shadow');
   }
   if (window.pageYOffset < 100 && second) {
     second = false;
     once = true;
     header.style.backgroundColor = 'inherit';
+    header.classList.remove('shadow');
+
   }
 });
 
@@ -39,18 +42,20 @@ const menuBtn = document.querySelector('.category__menu');
 const btn = document.querySelectorAll('.category__button');
 
 menuBtn.addEventListener('click', (event) => {
-  btn.forEach(elem => elem.classList.remove('active'))
-  
-  event.target.classList.toggle('active')
-  
+  btn.forEach((elem) => elem.classList.remove('active'));
+
+  event.target.classList.toggle('active');
 });
 
 const catBtn = document.querySelector('.choose');
 const cat = document.querySelectorAll('.choose_cat');
+const titleMain = document.querySelector('.main__title');
 
 catBtn.addEventListener('click', (event) => {
-  cat.forEach(elem => elem.classList.remove('active'))
+  if(event.target.classList.contains('choose_cat')) {
+    cat.forEach((elem) => elem.classList.remove('active'));
+    titleMain.innerText = event.target.innerText;
   
-  event.target.classList.toggle('active')
-  
+    event.target.classList.toggle('active');
+  }
 });

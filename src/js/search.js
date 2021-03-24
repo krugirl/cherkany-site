@@ -1,4 +1,4 @@
-import '../scss/index/index.scss';
+import '../scss/search/search.scss';
 
 import 'bootstrap';
 
@@ -36,4 +36,16 @@ window.onbeforeunload = function () {
 headerBurger.addEventListener('click', (event) => {
   headerBurger.classList.toggle('active');
   headerNav.classList.toggle('active');
+});
+
+const menuBtn = document.querySelector('.category__menu');
+const btn = document.querySelectorAll('.category__button');
+const titleSub = document.querySelector('.main__sidebar__title');
+
+
+menuBtn.addEventListener('click', (event) => {
+  btn.forEach((elem) => elem.classList.remove('active'));
+  titleSub.innerText = event.target.innerText;
+
+  event.target.classList.toggle('active');
 });

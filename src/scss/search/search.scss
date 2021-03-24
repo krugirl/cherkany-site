@@ -14,11 +14,9 @@ $fontFamily: "Montserrat";
 @import "../fonts";
 @import "../null";
 @import "../header";
-@import "./title.scss";
 @import "../footer";
-@import "./category.scss";
-@import "./choose.scss";
 @import "./main.scss";
+@import "./category.scss";
 @import "~bootstrap/scss/bootstrap";
 
 .ol, ul, dl, p {
