@@ -1,0 +1,106 @@
+.cafe {
+  .container-fluid {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  &__title {
+    background-color: #ffffff;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgb(167, 167, 167);
+    position: relative;
+    &__img {
+      img {
+        width: 100%;
+      }
+    }
+
+    &__circle-img {
+      width: 150px;
+      height: 150px;
+
+      border-radius: 50%;
+      border: 1px solid #eee;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      margin-bottom: 90px;
+      @media (max-width: $md2+px) {
+        width: 70px;
+        height: 70px;
+        left: 65px;
+      }
+    }
+    &__name {
+      margin-left: 65px;
+      margin-top: 70px;
+      font-size: 24px;
+      font-weight: 600;
+      @media (max-width: $md2+px) {
+        margin-top: 33px;
+      }
+    }
+    &__information {
+      display: flex;
+      padding-left: 30px;
+      color: rgba(0, 0, 0, 0.603);
+      @media (max-width: $md2+px) {
+        font-size: 12px;
+      padding-left: 20px;
+
+      }
+      @media (max-width: $md4+px) {
+        padding-left: 10px;
+
+      }
+    }
+
+    &__category {
+      margin-right: 10px;
+      @media (max-width: $md4+px) {
+        margin-right: 5px;
+
+      }
+      &::after {
+        content: '\A';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.603);
+        display: inline-block;
+
+        margin: 2px 3px;
+      }
+    }
+    &__rating {
+      margin-right: 10px;
+      @media (max-width: $md4+px) {
+        margin-right: 5px;
+
+      }
+      svg {
+        margin-bottom: 2px;
+        height: 0.85em !important;
+      }
+    }
+    &__feedback {
+      margin-right: 10px;
+      @media (max-width: $md4+px) {
+        margin-right: 5px;
+
+      }
+      &::after {
+        content: '\A';
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background: rgba(0, 0, 0, 0.603);
+        display: inline-block;
+
+        margin: 2px 3px;
+      }
+    }
+    &__cost {
+    }
+  }
+}

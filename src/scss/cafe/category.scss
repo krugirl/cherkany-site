@@ -1,0 +1,32 @@
+.category {
+  background-color: #fff;
+  padding: 20px 10px;
+  border-bottom: 1px solid rgb(167, 167, 167);
+
+  &__menu {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-around;
+  }
+
+  &__button {
+    
+    padding: 5px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #09265D;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.714);
+    transition: .3s;
+    &:hover {
+      background-color: lighten(#09265D, 11%);
+
+      color: #fff;
+    }
+    &.active {
+      background-color: #09265D;
+      color: #fff;
+    }
+   
+  }
+}

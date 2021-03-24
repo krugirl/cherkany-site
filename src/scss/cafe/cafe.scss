@@ -1,0 +1,60 @@
+//<ПЕРЕМЕННЫЕ>===========================================================================================================
+$minWidth: 320;
+$maxWidth: 1920;
+$maxWidthContainer: 1280;
+$md1: $maxWidthContainer + 12;
+$md2: 991.98;
+$md3: 767.98;
+$md4: 479.98;
+
+$borrad: 10px;
+
+$fontFamily: "Montserrat";
+//</ПЕРЕМЕННЫЕ>===========================================================================================================
+@import "../fonts";
+@import "../null";
+@import "../header";
+@import "./title.scss";
+@import "../footer";
+@import "./category.scss";
+@import "./choose.scss";
+@import "~bootstrap/scss/bootstrap";
+
+.ol, ul, dl, p {
+  margin-bottom: 0;
+ }
+
+.wrapper {
+  position: relative;
+}
+.container {
+  position: relative;
+  max-width: $maxWidthContainer + px;
+  margin: 0 auto;
+  width: 100%;
+  @media (max-width: $md1+px) {
+    max-width: 970px;
+  }
+  @media (max-width: $md2+px) {
+    max-width: 750px;
+  }
+  @media (max-width: $md3+px) {
+    max-width: none;
+    padding: 0 10px;
+  }
+}
+
+body {
+  background-color: #e8e9ed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  overflow: auto;
+  font-family: $fontFamily;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.header__menu{
+  border-radius: 0;
+}

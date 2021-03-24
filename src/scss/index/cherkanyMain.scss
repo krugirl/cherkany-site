@@ -1,6 +1,6 @@
 .mainblock {
   &__content {
-    background: url(../photo/bg.jpg);
+    background: url(../../photo/bg.jpg);
     margin-top: 30px;
     height: 830px;
     width: 100%;
@@ -41,6 +41,7 @@
     font-size: 20px;
     line-height: 20px;
     background-color: #09265d;
+    text-decoration: none !important;
 
     span {
       position: relative;

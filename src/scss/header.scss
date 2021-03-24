@@ -18,7 +18,7 @@
     z-index: 50;
     display: flex;
     position: relative;
-    width: 1280px;
+    width: 1252px;
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
@@ -201,12 +201,19 @@
   }
 
   &__login {
+   
     &__button {
+      text-decoration: none;
+      
       align-items: center;
       padding: 10px 25px;
       border-radius: $borrad;
       color: #fff;
       background-color: #09265d;
+      &:hover{
+        text-decoration: none;
+        color: #E8E9ED;
+      }
     }
     @media (max-width: $md3+px) {
       display: none;

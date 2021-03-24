@@ -11,12 +11,18 @@ $borrad: 10px;
 
 $fontFamily: "Montserrat";
 //</ПЕРЕМЕННЫЕ>===========================================================================================================
-@import "fonts";
-@import "null";
-@import "header";
+@import "../fonts";
+@import "../null";
+@import "../header";
 @import "cherkanyMain";
 @import "chooserCategory";
+@import "dayChooser";
+@import "../footer";
+@import "~bootstrap/scss/bootstrap";
 
+.ol, ul, dl, p {
+  margin-bottom: 0;
+ }
 
 .wrapper {
   position: relative;
