@@ -24,7 +24,14 @@ $fontFamily: "Montserrat";
 .ol, ul, dl, p {
   margin-bottom: 0;
  }
+ a {
+  color: #212529;
 
+ }
+ a:hover {
+   text-decoration: none;
+   color: #212529;
+ }
 .wrapper {
   position: relative;
 }

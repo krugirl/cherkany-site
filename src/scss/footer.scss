@@ -8,6 +8,9 @@
 
      }
     border-right: 2px solid #000;
+    @media (max-width: $md3+px) {
+      border-right: 0;
+    }
   }
   margin-top: 30px;
   background-color: #284B63;
@@ -17,7 +20,8 @@
   padding: 20px 10px 0 10px;
   @media (max-width: 768px) {
    justify-content: center;
-   display: flex;
+   padding-left: 30px;
+  //  display: flex;
   }
   @media (max-width: 360px) {
       
@@ -31,7 +35,6 @@
     align-items: center;
     @media (max-width: 768px) {
       padding-left: 0;
-      justify-content: center;
       margin-right: 20px;
      }
      @media (max-width: 360px) {

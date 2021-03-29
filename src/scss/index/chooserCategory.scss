@@ -34,10 +34,14 @@
   // .category__card
 
   &__card {
-
+    transition: .3s;
+    &:hover {
+      transform: translateY(-5px);
+    }
 
     margin-bottom: 30px;
     &__image {
+      
       img {
       border-radius: 5px 5px 0 0;
 

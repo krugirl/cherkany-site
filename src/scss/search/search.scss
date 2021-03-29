@@ -22,7 +22,14 @@ $fontFamily: "Montserrat";
 .ol, ul, dl, p {
   margin-bottom: 0;
  }
+ a {
+  color: #212529;
 
+ }
+ a:hover {
+   text-decoration: none;
+   color: #212529;
+ }
 .wrapper {
   position: relative;
 }
@@ -52,6 +59,7 @@ body {
   font-family: $fontFamily;
   overflow-x: hidden;
   position: relative;
+  overflow-x: hidden;
 }
 
 .header__menu{
